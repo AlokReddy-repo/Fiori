@@ -24,8 +24,3 @@ server:
     configuration:
      port: 35729
      path: webapp
-  -name: ui5-middleware-livereload
-  afterMiddleware: compression
-  configuration:
-  extraExts: "xml,json,properties"
-  path: "webapp"
