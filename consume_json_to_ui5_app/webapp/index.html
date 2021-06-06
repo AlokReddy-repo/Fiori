@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>consume_json_to_ui5_app</title>
+        <script
+            id="sap-ui-bootstrap"
+            src="resources/sap-ui-core.js"
+            data-sap-ui-theme="sap_fiori_3"
+            data-sap-ui-resourceroots='{"READJSONTOUI5.consumejsontoui5app": "./",
+                                          "i18n"                           :"./i18n"}'
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+            data-sap-ui-async="true"
+            data-sap-ui-libs="sap.m"
+			data-sap-ui-preload="async"
+            data-sap-ui-frameOptions="trusted"
+        ></script>
+        <script>
+ sap.ui.getCore().attachInit(function() {
+ var app = new sap.m.App({initialPage:"idPage1"});
+ var page1 = sap.ui.view({id:"idPage1",viewName:"READJSONTOUI5.consumejsontoui5app.view.MyView",type:sap.ui.core.mvc.ViewType.XML});
+app.addPage(page1);
+app.placeAt("content");
+ });
+ </script>
+    </head>
+    <body class="sapUiBody">
+        <div
+            data-sap-ui-component
+            data-name="READJSONTOUI5.consumejsontoui5app"
+            data-id="container"
+            data-settings='{"id" : "consume_json_to_ui5_app"}'
+        ></div>
+        <div id="content"></div>
+    </body>
+</html>

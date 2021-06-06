@@ -1,0 +1,38 @@
+<mvc:View
+    controllerName="READJSONTOUI5.consumejsontoui5app.controller.MyView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+ <App id="app">
+ <pages>
+ <Page id="page" title="Resource Model and JSON 
+Model">
+ <content>
+ <k:VerticalLayout>
+ <k:HorizontalLayout>
+ <Label 
+text="{RES>empno}" width="220px"> </Label>
+<Input 
+value="{JSN>/empno}"> </Input>
+ </k:HorizontalLayout>
+<k:HorizontalLayout>
+ <Label 
+text="{RES>ename}" width="220px"> </Label>
+<Input 
+value="{JSN>/ename}"> </Input>
+ </k:HorizontalLayout>
+<k:HorizontalLayout>
+ <Label 
+text="{RES>desig}" width="220px"> </Label>
+<Input 
+value="{JSN>/empdesig}"> </Input>
+ </k:HorizontalLayout>
+ </k:VerticalLayout>
+ </content>
+ </Page>
+ </pages>
+ </App>
+</Shell>
+</mvc:View>
