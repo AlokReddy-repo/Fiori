@@ -30,9 +30,7 @@
 	},
 	"ui5": {
 		"dependencies": [
-			"@sap/ux-ui5-tooling",
-                 
-            "ui5-middleware-livereload"
+			"@sap/ux-ui5-tooling"
 		]
 	}
 }
