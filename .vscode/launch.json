@@ -1,74 +1,135 @@
 {
-  "inputs": [
-    {
-      "id": "UI5Version",
-      "type": "command",
-      "command": "sap.ux.appGenerator.ui5Version"
-    }
-  ],
-  "configurations": [
-    {
-      "name": "Start consume_json_to_ui5_app",
-      "type": "node",
-      "request": "launch",
-      "runtimeExecutable": "npm",
-      "cwd": "${workspaceFolder}/consume_json_to_ui5_app",
-      "windows": {
-        "runtimeExecutable": "npm.cmd"
-      },
-      "runtimeArgs": [
-        "run-script",
-        "start"
-      ],
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "port": 9229,
-      "env": {
-        "DEBUG": "--inspect",
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/consume_json_to_ui5_app\"}"
-      }
-    },
-    {
-      "name": "Start consume_json_to_ui5_app Mock",
-      "type": "node",
-      "request": "launch",
-      "cwd": "${workspaceFolder}/consume_json_to_ui5_app",
-      "runtimeExecutable": "npm",
-      "windows": {
-        "runtimeExecutable": "npm.cmd"
-      },
-      "runtimeArgs": [
-        "run-script",
-        "start-mock"
-      ],
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "port": 9229,
-      "env": {
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/consume_json_to_ui5_app\"}"
-      }
-    },
-    {
-      "name": "Start consume_json_to_ui5_app Local",
-      "type": "node",
-      "request": "launch",
-      "cwd": "${workspaceFolder}/consume_json_to_ui5_app",
-      "runtimeExecutable": "npm",
-      "windows": {
-        "runtimeExecutable": "npm.cmd"
-      },
-      "runtimeArgs": [
-        "run-script",
-        "start-local"
-      ],
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "port": 9229,
-      "env": {
-        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/consume_json_to_ui5_app\"}"
-      }
-    }
-  ],
-  "compounds": [],
-  "version": "0.2.0"
+    "configurations": [
+        {
+            "name": "Start consume_json_to_ui5_app",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "cwd": "${workspaceFolder}/consume_json_to_ui5_app",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "runtimeArgs": [
+                "run-script",
+                "start"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "DEBUG": "--inspect",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/consume_json_to_ui5_app\"}"
+            }
+        },
+        {
+            "name": "Start consume_json_to_ui5_app Mock",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/consume_json_to_ui5_app",
+            "runtimeExecutable": "npm",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "runtimeArgs": [
+                "run-script",
+                "start-mock"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/consume_json_to_ui5_app\"}"
+            }
+        },
+        {
+            "name": "Start consume_json_to_ui5_app Local",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/consume_json_to_ui5_app",
+            "runtimeExecutable": "npm",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "runtimeArgs": [
+                "run-script",
+                "start-local"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/consume_json_to_ui5_app\"}"
+            }
+        },
+        {
+            "name": "Start consume_odata_to_ui5_app",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "cwd": "${workspaceFolder}/consume_odata_to_ui5_app",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "runtimeArgs": [
+                "run-script",
+                "start"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "DEBUG": "--inspect",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/consume_odata_to_ui5_app\"}"
+            }
+        },
+        {
+            "name": "Start consume_odata_to_ui5_app Mock",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/consume_odata_to_ui5_app",
+            "runtimeExecutable": "npm",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "runtimeArgs": [
+                "run-script",
+                "start-mock"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/consume_odata_to_ui5_app\"}"
+            }
+        },
+        {
+            "name": "Start consume_odata_to_ui5_app Local",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/consume_odata_to_ui5_app",
+            "runtimeExecutable": "npm",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "runtimeArgs": [
+                "run-script",
+                "start-local"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/consume_odata_to_ui5_app\"}"
+            }
+        }
+    ],
+    "compounds": [],
+    "inputs": [
+        {
+            "id": "UI5Version",
+            "type": "command",
+            "command": "sap.ux.appGenerator.ui5Version"
+        }
+    ],
+    "version": "0.2.0"
 }

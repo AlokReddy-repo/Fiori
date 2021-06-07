@@ -1,0 +1,68 @@
+<mvc:View
+    controllerName="ODATATOUI5.consumeodatatoui5app.controller.MyView"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="ShopStop">
+					<Table id="idProducts"
+		items="{
+			path: '/Products'
+		}">
+		<headerToolbar>
+			<OverflowToolbar>
+					<Title text="Products" level="H2"/>
+			</OverflowToolbar>
+		</headerToolbar>
+		<infoToolbar>
+			<OverflowToolbar>
+				<Label text="Available products"/>
+			</OverflowToolbar>
+		</infoToolbar>
+		<columns>
+			<Column
+				width="12em">
+				<Text text="ID" />
+			</Column>
+			<Column
+				width="12em">
+				<Text text="Name" />
+			</Column>
+			<Column
+				width="12em">
+				<Text text="Description" />
+			</Column>
+			<Column
+				width="12em">
+				<Text text="ReleaseDate" />
+			</Column>
+            <Column 
+                width="12em">
+            <Text text="Rating" />
+            </Column>
+            <Column 
+                width="12em">
+            <Text text="Price"/>
+            </Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>	
+					<Text text ="{ID}"  />
+					<Text text="{Name}" />
+					<Text text="{Description}" />
+                    <Text text="{ReleaseDate}" />
+                    <Text text="{Rating}" />
+                    <Text text="{Price}" />
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
