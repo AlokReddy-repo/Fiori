@@ -1,0 +1,34 @@
+<mvc:View
+    controllerName="LOGINUI5APP.loginui5app.controller.LoginForm"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:k="sap.ui.layout"
+    xmlns:core="sap.ui.core"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+>
+		<App>
+			<pages>
+				<Page title="Login Form" >
+				<content>
+					<FlexBox alignItems="Center" justifyContent="Center" backgroundDesign="Transparent">
+					<k:VerticalLayout>
+						<k:HorizontalLayout>
+							<Label id="idLUname" width="120px" text="UserName" design="Bold"></Label>
+							<Input id="idIUname" placeholder="...@xyz.com" type="Email"></Input>
+						</k:HorizontalLayout>
+						<k:HorizontalLayout>
+							<Label id="idLPwd" width="120px" text="Password" design="Bold"></Label>
+							<Input id="idIPwd" type="Password" placeholder="Password"></Input>
+						</k:HorizontalLayout>
+						<k:HorizontalLayout>
+							<Label width="95px"></Label>
+							<Button id="idBtn" text="Login" press="checkDetails" width="120px"></Button>
+						</k:HorizontalLayout>
+					</k:VerticalLayout>
+					</FlexBox>
+				</content>
+			</Page>
+			</pages>
+		</App>
+</mvc:View>
