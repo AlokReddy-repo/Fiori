@@ -8,9 +8,16 @@
 >
 		<App>
 			<pages>
-				<Page title="Split App View">
-					<content />
-				</Page>
-			</pages>
+			<SplitApp>
+				<masterPages>
+					<mvc:XMLView id="idMaster" viewName="LOGINUI5APP.loginui5app.view.Master"></mvc:XMLView>
+				</masterPages>
+				<detailPages>
+					<mvc:XMLView id="idPersonal" viewName="LOGINUI5APP.loginui5app.view.Personal"></mvc:XMLView>
+					<mvc:XMLView id="idExperience" viewName="LOGINUI5APP.loginui5app.view.Experience"></mvc:XMLView>
+					<mvc:XMLView id="idAddress" viewName="LOGINUI5APP.loginui5app.view.Address"></mvc:XMLView>
+				</detailPages>
+			</SplitApp>
+		</pages>
 		</App>
 </mvc:View>
