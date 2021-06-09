@@ -1,0 +1,14 @@
+<mvc:View
+    controllerName="LOGINUI5APP.loginui5app.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    displayBlock="true"
+    xmlns="sap.m"
+    
+>
+		<App>
+			<mvc:XMLView id="idLoginForm" viewName="LOGINUI5APP.loginui5app.view.LoginForm"></mvc:XMLView>
+            <mvc:XMLView id="idSplitApp" viewName="LOGINUI5APP.loginui5app.view.SplitApp"></mvc:XMLView>
+		</App>
+</mvc:View>
