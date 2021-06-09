@@ -1,0 +1,12 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core" controllerName="ROUTINGMANIFEST.routingusingmanifestjson.controller.Third" displayBlock="true">
+	
+		<App>
+			<pages>
+				<Page id="page" title="Third View" showNavButton="true" navButtonPress="onThirdBack">
+					<content>
+					    <Label text="This is the Third Page." width="100%" id="label0"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+</mvc:View>
