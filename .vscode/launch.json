@@ -243,6 +243,128 @@
             "env": {
                 "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/routing_using_manifest_json\"}"
             }
+        },
+        {
+            "name": "Start ui5_fragments_nested_views",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "cwd": "${workspaceFolder}/ui5_fragments_nested_views",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "runtimeArgs": [
+                "run-script",
+                "start"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "DEBUG": "--inspect",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/ui5_fragments_nested_views\"}"
+            }
+        },
+        {
+            "name": "Start ui5_fragments_nested_views Mock",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/ui5_fragments_nested_views",
+            "runtimeExecutable": "npm",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "runtimeArgs": [
+                "run-script",
+                "start-mock"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/ui5_fragments_nested_views\"}"
+            }
+        },
+        {
+            "name": "Start ui5_fragments_nested_views Local",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/ui5_fragments_nested_views",
+            "runtimeExecutable": "npm",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "runtimeArgs": [
+                "run-script",
+                "start-local"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/ui5_fragments_nested_views\"}"
+            }
+        },
+        {
+            "name": "Start ui5_fragments_nested_views",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "cwd": "${workspaceFolder}/ui5_fragments_nested_views",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "runtimeArgs": [
+                "run-script",
+                "start"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "DEBUG": "--inspect",
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/ui5_fragments_nested_views\"}"
+            }
+        },
+        {
+            "name": "Start ui5_fragments_nested_views Mock",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/ui5_fragments_nested_views",
+            "runtimeExecutable": "npm",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "runtimeArgs": [
+                "run-script",
+                "start-mock"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/ui5_fragments_nested_views\"}"
+            }
+        },
+        {
+            "name": "Start ui5_fragments_nested_views Local",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/ui5_fragments_nested_views",
+            "runtimeExecutable": "npm",
+            "windows": {
+                "runtimeExecutable": "npm.cmd"
+            },
+            "runtimeArgs": [
+                "run-script",
+                "start-local"
+            ],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229,
+            "env": {
+                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/Fiori/ui5_fragments_nested_views\"}"
+            }
         }
     ],
     "compounds": [],
@@ -255,3 +377,5 @@
     ],
     "version": "0.2.0"
 }
+    
+    

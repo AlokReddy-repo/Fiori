@@ -1,0 +1,14 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="UI5FRAGNESTVIEW.ui5fragmentsnestedviews.controller.Second" displayBlock="true">
+	<App>
+			<pages>
+				<Page title="Second View" showNavButton="true" navButtonPress="onSecBack">
+					<content>
+					    <Label text="This is the Second Page." width="100%" id="label0"/>
+					</content>
+				<headerContent>
+				    <Button icon="sap-icon://action" type="Transparent"  press="onPressThird" text="Goto Third View" id="button0"/>
+				</headerContent>
+				</Page>
+			</pages>
+		</App>
+</mvc:View>
