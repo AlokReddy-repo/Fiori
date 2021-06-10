@@ -11,8 +11,6 @@ sap.ui.define([
 			onInit: function () {
 
             },
-            onPressSecView: function() {
-        sap.ui.core.UIComponent.getRouterFor(this).navTo("secondPage");
-            }
+           
 		});
 	});

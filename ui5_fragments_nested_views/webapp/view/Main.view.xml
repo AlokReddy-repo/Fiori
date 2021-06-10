@@ -2,6 +2,7 @@
     controllerName="UI5FRAGNESTVIEW.ui5fragmentsnestedviews.controller.Main"
     xmlns:core="sap.ui.core"
     xmlns:mvc="sap.ui.core.mvc"
+    xmlns:layout="sap.ui.layout"
     displayBlock="true"
     xmlns="sap.m"
 >
@@ -11,6 +12,8 @@
 				<Page id="page" title="{i18n>title}">
                 <content>
                     <Label text="This is the First Page" width="100%" id="label0"></Label>
+                   <core:Fragment fragmentName="UI5FRAGNESTVIEW.ui5fragmentsnestedviews.view.NewFragment" type="XML" ></core:Fragment>
+                   <mvc:XMLView viewName="UI5FRAGNESTVIEW.ui5fragmentsnestedviews.view.NestedView"></mvc:XMLView> 
 					</content>
                     <headerContent>
                     <Button icon="sap-icon://action" type="Transparent" press="onPressSecView" text="Goto Second View"/>
