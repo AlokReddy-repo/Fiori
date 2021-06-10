@@ -5,6 +5,8 @@
 				<Page id="page" title="Third View" showNavButton="true" navButtonPress="onThirdBack">
 					<content>
 					    <Label text="This is the Third Page." width="100%" id="label0"/>
+                        <core:Fragment fragmentName="UI5FRAGNESTVIEW.ui5fragmentsnestedviews.view.NewFragment" type="XML" ></core:Fragment>
+                        <mvc:XMLView viewName="UI5FRAGNESTVIEW.ui5fragmentsnestedviews.view.NestedView"></mvc:XMLView>
 					</content>
 				</Page>
 			</pages>

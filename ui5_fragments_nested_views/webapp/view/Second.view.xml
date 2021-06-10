@@ -4,6 +4,8 @@
 				<Page title="Second View" showNavButton="true" navButtonPress="onSecBack">
 					<content>
 					    <Label text="This is the Second Page." width="100%" id="label0"/>
+                        <core:Fragment fragmentName="UI5FRAGNESTVIEW.ui5fragmentsnestedviews.view.NewFragment" type="XML" ></core:Fragment>
+                        <mvc:XMLView viewName="UI5FRAGNESTVIEW.ui5fragmentsnestedviews.view.NestedView"></mvc:XMLView>
 					</content>
 				<headerContent>
 				    <Button icon="sap-icon://action" type="Transparent"  press="onPressThird" text="Goto Third View" id="button0"/>
